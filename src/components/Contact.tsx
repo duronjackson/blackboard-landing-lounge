@@ -26,6 +26,11 @@ export const Contact = () => {
               <Input placeholder="Name" className="bg-card/50" />
               <Input type="email" placeholder="Email" className="bg-card/50" />
             </div>
+            <Input 
+              placeholder="Title/Role" 
+              className="bg-card/50" 
+              aria-label="Title or Role"
+            />
             <Textarea
               placeholder="Your message"
               className="min-h-[150px] bg-card/50"
