@@ -47,10 +47,10 @@
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-400;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent/70;
 }
 
 .hero-gradient {
-  background: linear-gradient(102.3deg, rgba(230,81,0,1) 5.9%, rgba(255,153,0,1) 45%, rgba(0,178,255,0.5) 75%, rgba(209,242,255,0.3) 95%);
+  background: linear-gradient(102.3deg, rgba(0,178,255,0.8) 5.9%, rgba(83,203,241,0.6) 45%, rgba(157,229,255,0.4) 75%, rgba(209,242,255,0.2) 95%);
 }
 

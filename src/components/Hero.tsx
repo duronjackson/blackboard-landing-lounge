@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 export const Hero = () => {
   return (
     <div className="min-h-[90vh] flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 opacity-30 hero-gradient blur-[120px] animate-pulse" />
+      <div className="absolute inset-0 opacity-40 hero-gradient blur-[120px] animate-pulse" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
