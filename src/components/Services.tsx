@@ -1,3 +1,4 @@
+
 import { Bot, LineChart, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -28,13 +29,13 @@ export const Services = () => {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.title} className="bg-card/50 backdrop-blur border-primary/10">
+            <Card key={service.title} className="bg-card backdrop-blur border-primary/10 shadow-md">
               <CardHeader>
                 <service.icon className="h-12 w-12 mb-4 text-primary" />
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-400">{service.description}</p>
+                <p className="text-gray-600">{service.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -24,17 +24,17 @@ export const Contact = () => {
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
-              <Input placeholder="Name" className="bg-card/50" />
-              <Input type="email" placeholder="Email" className="bg-card/50" />
+              <Input placeholder="Name" className="bg-white border-gray-300" />
+              <Input type="email" placeholder="Email" className="bg-white border-gray-300" />
             </div>
             <Input 
               placeholder="Title/Role" 
-              className="bg-card/50" 
+              className="bg-white border-gray-300" 
               aria-label="Title or Role"
             />
             <Textarea
               placeholder="Your message"
-              className="min-h-[150px] bg-card/50"
+              className="min-h-[150px] bg-white border-gray-300"
             />
             <Button type="submit" className="w-full">
               Send Message
