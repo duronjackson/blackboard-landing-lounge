@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,19 +23,14 @@ export const Contact = () => {
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
-              <Input placeholder="Name" className="bg-white border-gray-300" />
-              <Input type="email" placeholder="Email" className="bg-white border-gray-300" />
+              <Input placeholder="Name" className="bg-card/50" />
+              <Input type="email" placeholder="Email" className="bg-card/50" />
             </div>
-            <Input 
-              placeholder="Title/Role" 
-              className="bg-white border-gray-300" 
-              aria-label="Title or Role"
-            />
             <Textarea
               placeholder="Your message"
-              className="min-h-[150px] bg-white border-gray-300"
+              className="min-h-[150px] bg-card/50"
             />
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
               Send Message
             </Button>
           </form>
