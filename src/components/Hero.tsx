@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -12,7 +13,7 @@ export const Hero = () => {
             <span className="gradient-text block mt-2">Digital Innovation</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            We combine digital marketing expertise with AI-powered automation to drive real business growth
+            Experience seamless lead generation and automated marketing strategies tailored for your business.
           </p>
           <Button size="lg" className="bg-primary hover:bg-primary/90">
             Get Started <ArrowRight className="ml-2 h-4 w-4" />
