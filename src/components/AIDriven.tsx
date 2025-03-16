@@ -8,7 +8,7 @@ export const AIDriven = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            AI-Driven Lead Generation with Revenue Sharing Option
+            AI-Driven Lead Generation
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
             Our AI-powered lead generation solution is designed to deliver high-quality, conversion-ready
@@ -42,7 +42,7 @@ export const AIDriven = () => {
           <Card className="bg-card/50 backdrop-blur border-primary/10">
             <CardHeader>
               <BarChart4 className="h-12 w-12 mb-4 text-primary" />
-              <CardTitle>Revenue Share Model</CardTitle>
+              <CardTitle>Performance Model</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>

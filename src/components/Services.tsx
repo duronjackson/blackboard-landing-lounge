@@ -1,5 +1,5 @@
 
-import { Bot, LineChart, Users, Target, Zap } from "lucide-react";
+import { Bot, LineChart, Users, Target, Zap, Book } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
@@ -18,6 +18,11 @@ const services = [
     description: "From SEO and PPC to content marketing and social media, Blackboard Creative will craft a tailored digital marketing strategy to meet your unique business needs. Leverage our expertise to enhance your online presence and stay ahead of the competition.",
     icon: LineChart,
   },
+  {
+    title: "Curriculum Audit",
+    description: "Build curriculum that delivers tailored, measurable outcomes. Whether you're looking for an audit to ensure your course is aligned with your goals or need custom content development, we can help. Let's work together to elevate your material and ensure your content engages your audience and delivers the impact you're looking for.",
+    icon: Book,
+  }
 ];
 
 export const Services = () => {
@@ -32,7 +37,7 @@ export const Services = () => {
           combines cutting-edge technology with proven strategies to help businesses like yours elevate
           their lead generation, and digital marketing efforts to drive tangible results.
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service) => (
             <Card key={service.title} className="bg-card/50 backdrop-blur border-primary/10">
               <CardHeader>
