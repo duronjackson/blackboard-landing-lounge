@@ -8,7 +8,7 @@ export const AIDriven = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            AI-Driven Lead Generation with Revenue Sharing Option
+            AI-Driven Lead Generation
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
             Our AI-powered lead generation solution is designed to deliver high-quality, conversion-ready
@@ -17,7 +17,7 @@ export const AIDriven = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-1 gap-8 mb-16">
           <Card className="bg-card/50 backdrop-blur border-primary/10">
             <CardHeader>
               <Target className="h-12 w-12 mb-4 text-primary" />
@@ -35,27 +35,6 @@ export const AIDriven = () => {
               <div>
                 <h3 className="font-medium mb-2">Ongoing Optimization</h3>
                 <p className="text-gray-400">Our AI tools continuously collect data, analyze and optimize the lead generation process, improving lead quality over time.</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card/50 backdrop-blur border-primary/10">
-            <CardHeader>
-              <BarChart4 className="h-12 w-12 mb-4 text-primary" />
-              <CardTitle>Revenue Share Model</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <h3 className="font-medium mb-2">Revenue Share Structure</h3>
-                <p className="text-gray-400">We offer a revenue-sharing model where we take an agreed percentage of the revenue generated from each lead that converts into a paying customer.</p>
-              </div>
-              <div>
-                <h3 className="font-medium mb-2">Performance Monitoring</h3>
-                <p className="text-gray-400">Using AI analytics, we'll track the entire customer journey, from lead generation to conversion, ensuring that we're optimizing our strategies in real-time.</p>
-              </div>
-              <div>
-                <h3 className="font-medium mb-2">Aligned Incentives</h3>
-                <p className="text-gray-400">Our compensation depends on the quality and value of the leads we deliver, ensuring we're fully aligned with your success.</p>
               </div>
             </CardContent>
           </Card>

@@ -34,6 +34,7 @@ export const Contact = () => {
               <Input placeholder="Name" className="bg-card/50" />
               <Input type="email" placeholder="Email" className="bg-card/50" />
             </div>
+            <Input placeholder="Role/Position" className="bg-card/50" />
             <Textarea
               placeholder="Your message"
               className="min-h-[150px] bg-card/50"
