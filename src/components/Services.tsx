@@ -1,4 +1,3 @@
-
 import { Bot, LineChart, Users, Target, Zap, Book } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -19,7 +18,7 @@ const services = [
     icon: LineChart,
   },
   {
-    title: "Curriculum Audit",
+    title: "Course/Curriculum Audit",
     description: "Build curriculum that delivers tailored, measurable outcomes. Whether you're looking for an audit to ensure your course is aligned with your goals or need custom content development, we can help. Let's work together to elevate your material and ensure your content engages your audience and delivers the impact you're looking for.",
     icon: Book,
   }
