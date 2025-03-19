@@ -41,7 +41,7 @@ export const Contact = () => {
               placeholder="Your message"
               className="min-h-[150px] bg-card/50"
             />
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+            <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white">
               Send Message
             </Button>
           </form>
