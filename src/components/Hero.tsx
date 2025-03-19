@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="min-h-[90vh] flex items-center justify-center relative overflow-hidden bg-[#2A2A2A]">
+    <div className="min-h-[90vh] flex items-center justify-center relative overflow-hidden bg-[#222222]">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
