@@ -22,7 +22,7 @@ export const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Let's Work Together
           </h2>
-          <p className="text-gray-300">
+          <p className="text-foreground/80">
             Ready to take your marketing to new heights? Contact us today for a free consultation audit and
             let's achieve your goals together! Blackboard Creative is committed to your success. 
             Let's revolutionize your lead generation and marketing strategies with the power of AI.

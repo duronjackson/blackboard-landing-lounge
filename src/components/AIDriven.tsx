@@ -4,13 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const AIDriven = () => {
   return (
-    <section className="py-20 relative">
+    <section className="py-20 relative bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             AI-Driven Lead Generation
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto">
+          <p className="text-foreground/80 max-w-3xl mx-auto">
             Our AI-powered lead generation solution is designed to deliver high-quality, conversion-ready
             leads for your business. Through advanced technology and data-driven strategies, we'll help
             you acquire prospects who are most likely to convert into paying customers.
@@ -18,7 +18,7 @@ export const AIDriven = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <Card className="bg-card/50 backdrop-blur border-primary/10">
+          <Card className="bg-card shadow-lg border-primary/10">
             <CardHeader>
               <Target className="h-12 w-12 mb-4 text-primary" />
               <CardTitle>Pay-Per-Lead Model</CardTitle>
@@ -26,20 +26,20 @@ export const AIDriven = () => {
             <CardContent className="space-y-4">
               <div>
                 <h3 className="font-medium mb-2">Lead Qualification Criteria</h3>
-                <p className="text-gray-400">Each lead will be carefully filtered to meet your specific qualification standards, ensuring only high-quality leads are delivered.</p>
+                <p className="text-foreground/70">Each lead will be carefully filtered to meet your specific qualification standards, ensuring only high-quality leads are delivered.</p>
               </div>
               <div>
                 <h3 className="font-medium mb-2">Cost Per Lead</h3>
-                <p className="text-gray-400">You will pay a fixed fee for each qualified lead generated, determined based on your average conversion rates and cost-per-acquisition.</p>
+                <p className="text-foreground/70">You will pay a fixed fee for each qualified lead generated, determined based on your average conversion rates and cost-per-acquisition.</p>
               </div>
               <div>
                 <h3 className="font-medium mb-2">Ongoing Optimization</h3>
-                <p className="text-gray-400">Our AI tools continuously collect data, analyze and optimize the lead generation process, improving lead quality over time.</p>
+                <p className="text-foreground/70">Our AI tools continuously collect data, analyze and optimize the lead generation process, improving lead quality over time.</p>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="bg-card/50 backdrop-blur border-primary/10">
+          <Card className="bg-card shadow-lg border-primary/10">
             <CardHeader>
               <BarChart4 className="h-12 w-12 mb-4 text-primary" />
               <CardTitle>Performance Model</CardTitle>
@@ -47,15 +47,15 @@ export const AIDriven = () => {
             <CardContent className="space-y-4">
               <div>
                 <h3 className="font-medium mb-2">Revenue Share Structure</h3>
-                <p className="text-gray-400">We offer a revenue-sharing model where we take an agreed percentage of the revenue generated from each lead that converts into a paying customer.</p>
+                <p className="text-foreground/70">We offer a revenue-sharing model where we take an agreed percentage of the revenue generated from each lead that converts into a paying customer.</p>
               </div>
               <div>
                 <h3 className="font-medium mb-2">Performance Monitoring</h3>
-                <p className="text-gray-400">Using AI analytics, we'll track the entire customer journey, from lead generation to conversion, ensuring that we're optimizing our strategies in real-time.</p>
+                <p className="text-foreground/70">Using AI analytics, we'll track the entire customer journey, from lead generation to conversion, ensuring that we're optimizing our strategies in real-time.</p>
               </div>
               <div>
                 <h3 className="font-medium mb-2">Aligned Incentives</h3>
-                <p className="text-gray-400">Our compensation depends on the quality and value of the leads we deliver, ensuring we're fully aligned with your success.</p>
+                <p className="text-foreground/70">Our compensation depends on the quality and value of the leads we deliver, ensuring we're fully aligned with your success.</p>
               </div>
             </CardContent>
           </Card>
@@ -85,13 +85,13 @@ export const AIDriven = () => {
               icon: Users
             }
           ].map((item, index) => (
-            <Card key={index} className="bg-card/50 backdrop-blur border-primary/10">
+            <Card key={index} className="bg-card shadow-lg border-primary/10">
               <CardHeader className="pb-2">
                 <item.icon className="h-8 w-8 mb-2 text-primary" />
                 <CardTitle className="text-lg">{item.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-400 text-sm">{item.description}</p>
+                <p className="text-foreground/70 text-sm">{item.description}</p>
               </CardContent>
             </Card>
           ))}

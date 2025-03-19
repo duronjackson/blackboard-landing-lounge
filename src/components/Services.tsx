@@ -1,3 +1,4 @@
+
 import { Bot, LineChart, Users, Target, Zap, Book } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -31,20 +32,20 @@ export const Services = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Our Services
         </h2>
-        <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
+        <p className="text-center text-foreground/80 mb-12 max-w-3xl mx-auto">
           Blackboard Creative is at the forefront of AI-driven digital marketing. Our team of experts
           combines cutting-edge technology with proven strategies to help businesses like yours elevate
           their lead generation, and digital marketing efforts to drive tangible results.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service) => (
-            <Card key={service.title} className="bg-card/50 backdrop-blur border-primary/10">
+            <Card key={service.title} className="bg-card shadow-lg border-primary/10">
               <CardHeader>
                 <service.icon className="h-12 w-12 mb-4 text-primary" />
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-400">{service.description}</p>
+                <p className="text-foreground/70">{service.description}</p>
               </CardContent>
             </Card>
           ))}
