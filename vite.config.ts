@@ -20,4 +20,17 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Ensure assets are properly referenced with relative paths
+  base: "./",
+  build: {
+    // Improve output for static hosting
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@radix-ui/react-toast', '@radix-ui/react-tooltip'],
+        }
+      }
+    }
+  }
 }));
