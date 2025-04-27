@@ -1,4 +1,3 @@
-
 import { Bot, LineChart, Users, Target, Zap, Book, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 

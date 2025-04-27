@@ -4,24 +4,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
-    title: "Pay Per Lead Offer",
-    description: "Only pay for the leads that qualify for your business—no hidden fees, just results. Our innovative pay-per-lead model ensures you get the most out of your marketing budget while connecting with high-quality prospects.",
-    icon: Target,
-  },
-  {
     title: "AI Automation Solutions",
     description: "Streamline your marketing operations with our AI automation services. Effortlessly track leads, segment customers, and personalize communication to nurture relationships and convert more prospects into loyal clients.",
     icon: Bot,
   },
   {
-    title: "Digital Marketing Strategies",
-    description: "From SEO and PPC to content marketing and social media, Blackboard Creative will craft a tailored digital marketing strategy to meet your unique business needs. Leverage our expertise to enhance your online presence and stay ahead of the competition.",
-    icon: LineChart,
-  },
-  {
     title: "Course/Curriculum Audit",
     description: "Build curriculum that delivers tailored, measurable outcomes. Whether you're looking for an audit to ensure your course is aligned with your goals or need custom content development, we can help. Let's work together to elevate your material and ensure your content engages your audience and delivers the impact you're looking for.",
     icon: Book,
+  },
+  {
+    title: "Pay Per Lead Offer",
+    description: "Only pay for the leads that qualify for your business—no hidden fees, just results. Our innovative pay-per-lead model ensures you get the most out of your marketing budget while connecting with high-quality prospects.",
+    icon: Target,
+  },
+  {
+    title: "Digital Marketing Strategies",
+    description: "From SEO and PPC to content marketing and social media, Blackboard Creative will craft a tailored digital marketing strategy to meet your unique business needs. Leverage our expertise to enhance your online presence and stay ahead of the competition.",
+    icon: LineChart,
   }
 ];
 
@@ -54,3 +54,4 @@ export const Services = () => {
     </section>
   );
 };
+
