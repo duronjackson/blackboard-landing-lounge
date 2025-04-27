@@ -4,17 +4,6 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    title: "Pay Per Lead Offer",
-    description: "Only pay for the leads that qualify for your business—no hidden fees, just results.",
-    icon: Target,
-    benefits: [
-      "No upfront costs or retainers",
-      "Custom lead qualification criteria",
-      "Real-time lead delivery",
-      "Continuous quality optimization"
-    ]
-  },
-  {
     title: "AI Automation Solutions",
     description: "Streamline your marketing operations with our AI automation services.",
     icon: Bot,
@@ -26,17 +15,6 @@ const services = [
     ]
   },
   {
-    title: "Digital Marketing Strategies",
-    description: "Leverage our expertise to enhance your online presence and stay ahead of the competition.",
-    icon: LineChart,
-    benefits: [
-      "Data-driven campaign optimization",
-      "Multi-channel approach for wider reach",
-      "Competitive analysis and positioning",
-      "Measurable ROI on every dollar spent"
-    ]
-  },
-  {
     title: "Course/Curriculum Audit",
     description: "Build curriculum that delivers tailored, measurable outcomes.",
     icon: Book,
@@ -45,6 +23,28 @@ const services = [
       "Student engagement optimization",
       "Learning outcome measurement",
       "Higher completion and satisfaction rates"
+    ]
+  },
+  {
+    title: "Pay Per Lead Offer",
+    description: "Only pay for the leads that qualify for your business—no hidden fees, just results.",
+    icon: Target,
+    benefits: [
+      "No upfront costs or retainers",
+      "Custom lead qualification criteria",
+      "Real-time lead delivery",
+      "Continuous quality optimization"
+    ]
+  },
+  {
+    title: "Digital Marketing Strategies",
+    description: "Leverage our expertise to enhance your online presence and stay ahead of the competition.",
+    icon: LineChart,
+    benefits: [
+      "Data-driven campaign optimization",
+      "Multi-channel approach for wider reach",
+      "Competitive analysis and positioning",
+      "Measurable ROI on every dollar spent"
     ]
   }
 ];
