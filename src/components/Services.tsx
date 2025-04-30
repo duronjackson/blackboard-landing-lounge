@@ -14,14 +14,14 @@ const services = [
     icon: Book,
   },
   {
-    title: "Pay Per Lead Offer",
-    description: "Only pay for the leads that qualify for your business—no hidden fees, just results. Our innovative pay-per-lead model ensures you get the most out of your marketing budget while connecting with high-quality prospects.",
-    icon: Target,
-  },
-  {
     title: "Digital Marketing Strategies",
     description: "Cut through the noise with targeted digital marketing strategies crafted specifically for coaches, course creators, consultants, and SaaS founders. Our end-to-end solutions address your unique challenges—from ineffective SEO and wasted ad spend to inconsistent content creation and poor social engagement. We'll transform your digital presence with data-backed strategies that attract qualified leads, position you as an authority, and convert at every stage of your funnel—delivering measurable ROI where generic approaches fail.",
     icon: LineChart,
+  },
+  {
+    title: "Pay Per Lead Offer",
+    description: "Only pay for the leads that qualify for your business—no hidden fees, just results. Our innovative pay-per-lead model ensures you get the most out of your marketing budget while connecting with high-quality prospects.",
+    icon: Target,
   }
 ];
 
