@@ -1,5 +1,5 @@
 
-import { Bot, LineChart, Users, Book } from "lucide-react";
+import { Bot, LineChart, Book } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
@@ -9,14 +9,14 @@ const services = [
     icon: Bot,
   },
   {
-    title: "Digital Marketing Strategies",
-    description: "Cut through the noise with targeted digital marketing strategies crafted specifically for coaches, course creators, consultants, and SaaS founders. Our end-to-end solutions address your unique challenges—from ineffective SEO and wasted ad spend to inconsistent content creation and poor social engagement. We'll transform your digital presence with data-backed strategies that attract qualified leads, position you as an authority, and convert at every stage of your funnel—delivering measurable ROI where generic approaches fail.",
-    icon: LineChart,
-  },
-  {
     title: "Course/Curriculum Audit",
     description: "Transform underperforming courses and knowledge assets into high-converting client acquisition tools. For course creators battling low completion rates, SaaS founders struggling with user onboarding, coaches trying to scale beyond 1:1 work, and consultants packaging expertise—we engineer learning experiences that engage, convert, and deliver measurable outcomes. Our curriculum audits identify critical gaps while our optimization process enhances retention and results, turning your intellectual property into your most powerful marketing asset without sacrificing the quality that built your reputation.",
     icon: Book,
+  },
+  {
+    title: "Digital Marketing Strategies",
+    description: "Cut through the noise with targeted digital marketing strategies crafted specifically for coaches, course creators, consultants, and SaaS founders. Our end-to-end solutions address your unique challenges—from ineffective SEO and wasted ad spend to inconsistent content creation and poor social engagement. We'll transform your digital presence with data-backed strategies that attract qualified leads, position you as an authority, and convert at every stage of your funnel—delivering measurable ROI where generic approaches fail.",
+    icon: LineChart,
   }
 ];
 
@@ -35,17 +35,39 @@ export const Services = () => {
           <br /><br /><em>We don't sell services.  We build revenue-generating systems that scale with your business.</em>
         </p>
         <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service) => (
-            <Card key={service.title} className="bg-card shadow-lg border-primary/10">
-              <CardHeader>
-                <service.icon className="h-12 w-12 mb-4 text-primary" />
-                <CardTitle>{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-foreground/70">{service.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {/* First row with two cards */}
+          <Card className="bg-card shadow-lg border-primary/10">
+            <CardHeader>
+              <Bot className="h-12 w-12 mb-4 text-primary" />
+              <CardTitle>{services[0].title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-foreground/70">{services[0].description}</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="bg-card shadow-lg border-primary/10">
+            <CardHeader>
+              <Book className="h-12 w-12 mb-4 text-primary" />
+              <CardTitle>{services[1].title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-foreground/70">{services[1].description}</p>
+            </CardContent>
+          </Card>
+          
+          {/* Second row with centered card spanning both columns */}
+          <Card className="bg-card shadow-lg border-primary/10 md:col-span-2">
+            <CardHeader>
+              <div className="flex justify-center w-full">
+                <LineChart className="h-12 w-12 mb-4 text-primary" />
+              </div>
+              <CardTitle className="text-center">{services[2].title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-foreground/70 text-center">{services[2].description}</p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
