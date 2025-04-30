@@ -56,16 +56,14 @@ export const Services = () => {
             </CardContent>
           </Card>
           
-          {/* Second row with centered card spanning both columns */}
+          {/* Second row with card spanning both columns, but left-aligned content */}
           <Card className="bg-card shadow-lg border-primary/10 md:col-span-2">
             <CardHeader>
-              <div className="flex justify-center w-full">
-                <LineChart className="h-12 w-12 mb-4 text-primary" />
-              </div>
-              <CardTitle className="text-center">{services[2].title}</CardTitle>
+              <LineChart className="h-12 w-12 mb-4 text-primary" />
+              <CardTitle>{services[2].title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/70 text-center">{services[2].description}</p>
+              <p className="text-foreground/70">{services[2].description}</p>
             </CardContent>
           </Card>
         </div>
