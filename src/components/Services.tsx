@@ -33,9 +33,8 @@ export const Services = () => {
           Our Services
         </h2>
         <p className="text-center text-foreground/80 mb-12 max-w-3xl mx-auto">
-          Blackboard Creative is at the forefront of AI-driven digital marketing. Our team of experts
-          combines cutting-edge technology with proven strategies to help businesses like yours elevate
-          their lead generation, and digital marketing efforts to drive tangible results.
+          Blackboard Creative: AI-Powered Solutions for Measurable Growth
+          At Blackboard Creative, we harness cutting-edge AI to revolutionize your business operations. Our proprietary AI systems analyze market data, automate personalized outreach, and optimize conversion pathways—creating intelligent business solutions that work while you sleep. We engineer these AI ecosystems to deliver predictable revenue streams and scalable growth specifically designed for coaches, consultants, and SaaS companies.  We don't sell services. We build revenue-generating systems that scale with your business.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service) => (
@@ -54,4 +53,3 @@ export const Services = () => {
     </section>
   );
 };
-
