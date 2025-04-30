@@ -10,7 +10,7 @@ const services = [
   },
   {
     title: "Course/Curriculum Audit",
-    description: "Build curriculum that delivers tailored, measurable outcomes. Whether you're looking for an audit to ensure your course is aligned with your goals or need custom content development, we can help. Let's work together to elevate your material and ensure your content engages your audience and delivers the impact you're looking for.",
+    description: "Transform underperforming courses and knowledge assets into high-converting client acquisition tools. For course creators battling low completion rates, SaaS founders struggling with user onboarding, coaches trying to scale beyond 1:1 work, and consultants packaging expertise—we engineer learning experiences that engage, convert, and deliver measurable outcomes. Our curriculum audits identify critical gaps while our optimization process enhances retention and results, turning your intellectual property into your most powerful marketing asset without sacrificing the quality that built your reputation.",
     icon: Book,
   },
   {
