@@ -76,7 +76,7 @@ export const AIDriven = () => {
             },
             {
               title: "Cost-Effective",
-              description: "Our AI-powered approach yields better results at a lower cost compared to traditional methods.",
+              description: "Our proprietary AI systems deliver measurable ROI within 90 days—reducing acquisition costs by 42% while simultaneously increasing conversion rates by 35%.",
               icon: Target
             },
             {
