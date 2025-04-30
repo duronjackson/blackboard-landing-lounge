@@ -36,7 +36,7 @@ export const Services = () => {
           Blackboard Creative: AI-Powered Solutions for Measurable Growth
         </p>
         <p className="text-center text-foreground/80 mb-12 max-w-3xl mx-auto">
-          At Blackboard Creative, we harness cutting-edge AI to revolutionize your business operations. Our proprietary AI systems analyze market data, automate personalized outreach, and optimize conversion pathways—creating intelligent business solutions that work while you sleep. We engineer these AI ecosystems to deliver predictable revenue streams and scalable growth specifically designed for coaches, consultants, and SaaS companies.  We don't sell services. We build revenue-generating systems that scale with your business.
+          At Blackboard Creative, we harness cutting-edge AI to revolutionize your business operations. Our proprietary AI systems analyze market data, automate personalized outreach, and optimize conversion pathways—creating intelligent business solutions that work while you sleep. We engineer these AI ecosystems to deliver scalable growth specifically designed for coaches, consultants, and SaaS companies.  We don't sell services. We build revenue-generating systems that scale with your business.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service) => (
