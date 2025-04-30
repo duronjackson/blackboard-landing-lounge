@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const services = [
   {
     title: "AI Automation Solutions",
-    description: "Streamline your marketing operations with our AI automation services. Effortlessly track leads, segment customers, and personalize communication to nurture relationships and convert more prospects into loyal clients.",
+    description: "Eliminate manual prospecting, inconsistent lead flow, and high customer acquisition costs with AI marketing solutions designed specifically for coaches, course creators, consultants, and SaaS founders. Our systems automate repetitive tasks, identify qualified leads, deliver perfectly-timed personalized messages, and provide actionable insights—letting you focus on serving clients while your business grows on autopilot.",
     icon: Bot,
   },
   {
