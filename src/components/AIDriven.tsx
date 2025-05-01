@@ -60,7 +60,7 @@ export const AIDriven = () => {
           </Card>
         </div>
 
-        <h3 className="text-2xl font-bold text-center mb-8 mt-16">Why Choose Our AI-Driven Automation Solutions?</h3>
+        <h3 className="text-2xl font-bold text-center mb-8 mt-24">Why Choose Our AI-Driven Automation Solutions?</h3>
         <div className="grid md:grid-cols-4 gap-6">
           {[
             {
