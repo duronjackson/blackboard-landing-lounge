@@ -9,7 +9,7 @@ export const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Strategy, Systems, Scale:
-            <span className="block mt-2 text-accent">AI-Powered Growth for Experts & Founders</span>
+            <span className="block mt-2">AI-Powered Growth for Experts & Founders</span>
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Experience seamless lead generation and automated marketing strategies tailored for your business.
