@@ -30,7 +30,7 @@ export const Services = () => {
         <p className="text-center font-bold text-xl md:text-2xl text-primary mb-4 max-w-3xl mx-auto">
           Blackboard Creative: AI-Powered Solutions for Measurable Growth
         </p>
-        <p className="text-center text-foreground/80 mb-12 max-w-3xl mx-auto">
+        <p className="text-center text-justify text-foreground/80 mb-12 max-w-3xl mx-auto">
           At Blackboard Creative, we harness cutting-edge AI to revolutionize your business operations. Our proprietary AI systems analyze market data, automate personalized outreach, and optimize conversion pathways—creating intelligent business solutions that work while you sleep. We engineer these AI ecosystems to deliver scalable growth specifically designed for coaches, consultants, and SaaS companies.
           <br /><br /><em>We don't sell services.  We build revenue-generating systems that scale with your business.</em>
         </p>
