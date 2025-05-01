@@ -81,7 +81,7 @@ export const AIDriven = () => {
             },
             {
               title: "Aligned Goals",
-              description: "We're focused on driving the best possible outcomes, as our success is tied directly to your results. We implement comprehensive measurement systems that track exactly how our work translates into revenue for your coaching practice, course platform, consultancy, or SaaS product, turning marketing from an expense into your most predictable revenue-generating asset.",
+              description: "We're focused on driving the best possible outcomes, as our success is tied directly to your results. We implement comprehensive measurement systems that track exactly how our work translates into revenue, turning marketing from an expense into your most predictable revenue-generating asset.",
               icon: Users
             }
           ].map((item, index) => (
