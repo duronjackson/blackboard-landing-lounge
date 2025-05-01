@@ -22,7 +22,7 @@ export const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent">
             Let's Build Your AI Growth Engine
           </h2>
-          <p className="text-foreground/80">
+          <p className="text-foreground/80 text-justify">
             Blackboard Creative's AI Automation Solutions and Course Audits transform underperforming content into powerful conversion engines. We deliver tailored automated workflows, eliminating tedious marketing tasks, delivering targeted, higher-quality leads. Let us reveal exactly how we create predictable growth for your coaching practice, course platform, consultancy, or SaaS business—turning your expertise into a scalable asset that works even when you don't.
           </p>
         </div>
