@@ -75,14 +75,14 @@ export const AIDriven = () => {
               icon: BarChart4
             },
             {
-              title: "Cost-Effective",
-              description: "Our proprietary AI systems deliver clear return on investment by focusing exclusively on high-impact activities that drive business growth. We help eliminate wasteful marketing spend while streamlining critical workflows and building automated systems that consistently attract qualified clients—transforming your marketing from an unpredictable expense into a reliable asset that pays for itself.",
-              icon: Target
-            },
-            {
               title: "Aligned Goals",
               description: "We're focused on driving the best possible outcomes, as our success is tied directly to your results. We implement comprehensive measurement systems that track exactly how our work translates into revenue, turning marketing from an expense into your most predictable revenue-generating asset.",
               icon: Users
+            },
+            {
+              title: "Cost-Effective",
+              description: "Our proprietary AI systems deliver clear return on investment by focusing exclusively on high-impact activities that drive business growth. We help eliminate wasteful marketing spend while streamlining critical workflows and building automated systems that consistently attract qualified clients—transforming your marketing from an unpredictable expense into a reliable asset that pays for itself.",
+              icon: Target
             }
           ].map((item, index) => (
             <Card key={index} className="bg-card shadow-lg border-primary/10">
