@@ -10,7 +10,7 @@ export const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-2">
             Strategy, Systems, Scale:
           </h1>
-          <p className="text-2xl md:text-3xl text-accent font-semibold mb-6">
+          <p className="text-2xl md:text-3xl text-accent font-bold mb-6">
             AI-Powered Growth for Experts & Founders
           </p>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
