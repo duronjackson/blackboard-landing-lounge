@@ -1,3 +1,4 @@
+
 import { Brain, Target, Zap, BarChart4, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -75,7 +76,7 @@ export const AIDriven = () => {
             },
             {
               title: "Cost-Effective",
-              description: "Our proprietary AI systems deliver clear return on investment by focusing exclusively on high-impact activities that drive business growth. We help coaches, course creators, consultants and SaaS founders eliminate wasteful marketing spend while streamlining critical workflows and building automated systems that consistently attract qualified clients—transforming your marketing from an unpredictable expense into a reliable asset that pays for itself.",
+              description: "Our proprietary AI systems deliver clear return on investment by focusing exclusively on high-impact activities that drive business growth. We help eliminate wasteful marketing spend while streamlining critical workflows and building automated systems that consistently attract qualified clients—transforming your marketing from an unpredictable expense into a reliable asset that pays for itself.",
               icon: Target
             },
             {
