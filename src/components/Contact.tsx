@@ -23,9 +23,7 @@ export const Contact = () => {
             Let's Work Together
           </h2>
           <p className="text-foreground/80">
-            Ready to take your marketing to new heights? Contact us today for a free consultation audit and
-            let's achieve your goals together! Blackboard Creative is committed to your success. 
-            Let's revolutionize your lead generation and marketing strategies with the power of AI.
+            Blackboard Creative's AI Automation Solutions and Course Audits transform underperforming content into powerful conversion engines. We deliver tailored automated workflows, eliminating tedious marketing tasks, delivering targeted, higher-quality leads. Let us reveal exactly how we create predictable growth for your coaching practice, course platform, consultancy, or SaaS business—turning your expertise into a scalable asset that works even when you don't.
           </p>
         </div>
         <div className="max-w-2xl mx-auto">
