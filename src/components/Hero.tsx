@@ -7,10 +7,12 @@ export const Hero = () => {
     <div className="min-h-[90vh] flex items-center justify-center relative overflow-hidden" style={{ backgroundColor: "#404041" }}>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-2">
             Strategy, Systems, Scale:
-            <span className="block mt-2 text-accent">AI-Powered Growth for Experts & Founders</span>
           </h1>
+          <p className="text-2xl md:text-3xl text-accent font-semibold mb-6">
+            AI-Powered Growth for Experts & Founders
+          </p>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Experience seamless lead generation and automated marketing strategies tailored for your business.
           </p>
