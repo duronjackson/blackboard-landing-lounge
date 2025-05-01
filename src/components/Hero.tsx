@@ -11,7 +11,7 @@ export const Hero = () => {
             Strategy, Systems, Scale:
           </h1>
           <p className="text-2xl md:text-3xl text-accent font-bold mb-6">
-            AI-Powered Growth for Experts & Founders
+            Blackboard Creative's 3 Step System: From Exhausted Expert to Automated Authority
           </p>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Experience seamless lead generation and automated marketing strategies tailored for your business.
