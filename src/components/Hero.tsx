@@ -15,7 +15,7 @@ export const Hero = () => {
             Experience seamless lead generation and automated marketing strategies tailored for your business.
           </p>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
-            Get Started <ArrowRight className="ml-2 h-4 w-4" />
+            Book a Call <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </div>
