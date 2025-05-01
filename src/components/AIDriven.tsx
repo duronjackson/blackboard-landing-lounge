@@ -66,7 +66,7 @@ export const AIDriven = () => {
           {[
             {
               title: "Efficient & Scalable",
-              description: "AI technology ensures that your lead generation efforts are efficient, automated, and scalable.",
+              description: "Eliminate manual outreach and inconsistent results with AI technology that transforms labor-intensive lead generation into an automated system that consistently delivers qualified prospects without requiring additional time or resources as your business grows.",
               icon: Zap
             },
             {
