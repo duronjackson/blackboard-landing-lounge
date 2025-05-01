@@ -13,7 +13,7 @@ export const Hero = () => {
           <p className="text-2xl md:text-3xl text-accent font-bold mb-6">
             AI-Powered Growth for Experts & Founders
           </p>
-          <p className="text-base md:text-lg text-foreground/80 font-bold mb-8 max-w-2xl mx-auto">
+          <p className="text-sm md:text-md text-foreground/80 font-bold mb-8 max-w-2xl mx-auto whitespace-nowrap">
             Blackboard Creative's 3 Step System: From Exhausted Expert to Automated Authority
           </p>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
