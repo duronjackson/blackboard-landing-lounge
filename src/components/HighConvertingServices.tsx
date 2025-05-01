@@ -1,3 +1,4 @@
+
 import { Bot, LineChart, Users, Target, Zap, Book, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -90,7 +91,7 @@ export const HighConvertingServices = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
             Schedule a Free Consultation
           </Button>
