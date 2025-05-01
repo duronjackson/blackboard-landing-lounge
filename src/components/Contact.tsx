@@ -16,7 +16,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-16" id="contact">
+    <section className="py-8" id="contact">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent text-center">
