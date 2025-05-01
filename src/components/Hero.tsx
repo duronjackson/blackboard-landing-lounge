@@ -16,7 +16,7 @@ export const Hero = () => {
           <p className="text-md md:text-lg text-foreground/80 font-bold mb-8 max-w-2xl mx-auto whitespace-nowrap">
             Blackboard Creative's 3 Step System: From Exhausted Expert to Automated Authority
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white mb-16">
             Book a Call <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
