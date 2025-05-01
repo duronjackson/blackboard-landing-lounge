@@ -71,7 +71,7 @@ export const AIDriven = () => {
             },
             {
               title: "Higher Conversion",
-              description: "Stop wasting resources on lukewarm prospects that rarely convert. Our predictive analytics identifies the exact characteristics of your highest-value clients, allowing us to target and deliver qualified leads precisely when they're ready to make purchasing decisions—cutting acquisition costs while dramatically increasing your close rates.",
+              description: "Stop wasting resources on lukewarm prospects that rarely convert. Our predictive analytics identifies the exact characteristics of your highest-value clients, allowing us to target and deliver qualified leads—cutting acquisition costs while dramatically increasing your close rates.",
               icon: BarChart4
             },
             {
