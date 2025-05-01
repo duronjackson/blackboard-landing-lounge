@@ -14,7 +14,7 @@ export const Hero = () => {
             AI-Powered Growth for Experts & Founders
           </p>
           <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-            Blackboard Creative's 3 Step System: From Exhausted Expert to<br />Automated Authority
+            Blackboard Creative's 3 Step System: From Exhausted Expert to Automated Authority
           </p>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
             Book a Call <ArrowRight className="ml-2 h-4 w-4" />
