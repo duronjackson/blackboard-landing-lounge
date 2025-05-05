@@ -43,7 +43,7 @@ export const Services = () => {
           <Card className="bg-card shadow-lg border-primary/10">
             <CardHeader>
               <div className="flex items-center">
-                <Bot className="h-12 w-12 mr-4 text-primary" />
+                <Bot className="h-16 w-16 mr-6 text-primary" />
                 <p className="text-sm italic text-foreground/80">
                   "<span className="font-bold italic">Businesses implementing AI-driven personalization</span> saw course conversion rate improvements averaging 195%."
                   <span className="block text-xs mt-1">– Dynamic Yield Personalization Benchmark Report</span>
