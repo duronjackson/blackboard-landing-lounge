@@ -59,7 +59,7 @@ export const Services = () => {
                   <span className="block text-xs mt-1">– Adobe Digital Experience Research</span>
                 </p>
               </div>
-              <CardTitle className="mt-4">{services[1].title}</CardTitle>
+              <CardTitle className="mt-6">{services[1].title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground/70">{services[1].description}</p>
