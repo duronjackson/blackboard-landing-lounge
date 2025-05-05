@@ -16,7 +16,8 @@ export const Hero = () => {
             Strategy, Systems, Scale:
           </h1>
           <p className="text-base md:text-lg text-foreground/90 italic mb-4">
-            "Executive coaching firms implementing AI-driven lead generation report <span className="font-bold">5.7x higher client acquisition rates</span> than those using traditional networking alone."
+            "Executive coaching firms implementing AI-driven lead generation report 
+            <br /><span className="font-bold">5.7x higher client acquisition rates</span> than those using traditional networking alone."
           </p>
           <p className="text-2xl md:text-3xl text-accent font-bold mb-6">
             AI-Powered Growth for Experts & Founders
