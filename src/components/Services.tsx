@@ -55,12 +55,12 @@ export const Services = () => {
               <div className="flex items-center">
                 <Book className="h-12 w-12 mr-4 text-primary" />
                 <p className="text-sm italic text-foreground/80">
-                  "<span className="font-bold">Course sales conversion rates increased 214%</span> within 90 days 
-                  <span className="whitespace-nowrap">using</span> AI-enhanced optimization systems."
+                  "<span className="font-bold">Course sales conversion rates increased 214%</span> within 90 days<br /> 
+                  <span className="whitespace-nowrap">using AI-</span>enhanced optimization systems."
                   <span className="block text-xs mt-1 mb-3">– Adobe Digital Experience Research</span>
                 </p>
               </div>
-              <CardTitle className="mt-6">{services[1].title}</CardTitle>
+              <CardTitle className="mt-8">{services[1].title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground/70">{services[1].description}</p>
