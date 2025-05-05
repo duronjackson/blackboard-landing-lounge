@@ -44,10 +44,12 @@ export const Services = () => {
             <CardHeader>
               <div className="flex items-center">
                 <Bot className="h-12 w-12 mr-4 text-primary" />
-                <p className="text-sm italic text-foreground/80">
-                  "<span className="font-bold">Businesses implementing AI-driven personalization</span> saw course conversion rate improvements averaging 195%."
-                  <span className="block text-xs mt-1 mb-3">– Dynamic Yield Personalization Benchmark Report</span>
-                </p>
+                <div className="ml-2">
+                  <p className="text-sm italic text-foreground/80">
+                    "<span className="font-bold">Businesses implementing AI-driven personalization</span> saw course conversion rate improvements averaging 195%."
+                    <span className="block text-xs mt-1 mb-3">– Dynamic Yield Personalization Benchmark Report</span>
+                  </p>
+                </div>
               </div>
               <CardTitle className="mt-8">{services[0].title}</CardTitle>
             </CardHeader>
