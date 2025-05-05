@@ -1,4 +1,3 @@
-
 import { Bot, LineChart, Book } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -43,7 +42,7 @@ export const Services = () => {
           <Card className="bg-card shadow-lg border-primary/10">
             <CardHeader>
               <div className="flex items-center">
-                <Bot className="h-12 w-12 mr-4 text-primary" />
+                <Bot className="h-16 w-16 mr-4 text-primary" />
                 <div className="ml-2">
                   <p className="text-sm italic text-foreground/80">
                     "<span className="font-bold">Businesses implementing AI-driven personalization</span> saw course conversion rate improvements averaging 195%."
@@ -78,7 +77,7 @@ export const Services = () => {
           {/* Second row with card spanning both columns, but left-aligned content */}
           <Card className="bg-card shadow-lg border-primary/10 md:col-span-2">
             <CardHeader>
-              <LineChart className="h-12 w-12 mb-4 text-primary" />
+              <LineChart className="h-16 w-16 mb-4 text-primary" />
               <CardTitle>{services[2].title}</CardTitle>
             </CardHeader>
             <CardContent>
