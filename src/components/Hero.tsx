@@ -18,7 +18,7 @@ export const Hero = () => {
           <p className="text-base md:text-lg text-foreground/90 italic mb-4">
             "Executive coaching firms implementing AI-driven lead generation report 
             <br /><span className="font-bold">5.7x higher client acquisition rates</span> than those using traditional networking alone."
-            <br /><span className="text-xs mt-1 block">– International Coaching Federation 2023 Global Coaching Study</span>
+            <br /><span className="text-sm mt-1 block">– International Coaching Federation 2023 Global Coaching Study</span>
           </p>
           <p className="text-2xl md:text-3xl text-accent font-bold mb-6">
             AI-Powered Growth for Experts & Founders
