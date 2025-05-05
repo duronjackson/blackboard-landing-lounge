@@ -1,4 +1,3 @@
-
 import { Brain, Target, Zap, BarChart4, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -6,6 +5,11 @@ export const AIDriven = () => {
   return (
     <section className="py-12 relative bg-secondary/30">
       <div className="container mx-auto px-4">
+        <p className="text-center italic mb-12 pt-8 text-foreground/90 text-xl">
+          "Business coaches who implemented automated lead generation systems saw <span className="font-bold italic text-[#F97316]">3.7x higher client acquisition rates</span> compared to traditional networking alone."
+          <br /><span className="text-md mt-4 block">– Business2Community Lead Generation Benchmark Report 2023</span>
+        </p>
+        
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             AI-Driven Lead Generation
