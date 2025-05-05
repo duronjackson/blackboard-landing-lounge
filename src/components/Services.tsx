@@ -24,8 +24,9 @@ export const Services = () => {
   return (
     <section className="py-24 relative" id="services">
       <div className="container mx-auto px-4">
-        <p className="text-center italic mb-10 pt-8 text-foreground/90 text-xl text-accent">
-          "<span className="font-bold">68% of coaching businesses</span> cite client acquisition as their primary business challenge."
+        <p className="text-center italic mb-16 pt-8 text-accent">
+          "<span className="font-bold">71% of business coaches</span> report client acquisition as their #1 challenge."
+          <br /><span className="text-sm mt-1 block">– Center for Executive Coaching</span>
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Our Services
