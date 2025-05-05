@@ -42,14 +42,8 @@ export const Services = () => {
           {/* First row with two cards */}
           <Card className="bg-card shadow-lg border-primary/10">
             <CardHeader>
-              <div className="flex items-center">
-                <Bot className="h-12 w-12 mr-4 text-primary" />
-                <p className="text-sm italic text-foreground/80">
-                  "<span className="font-bold">Businesses implementing AI-driven personalization</span> saw course conversion rate improvements averaging 195%."
-                  <span className="block text-xs mt-1 mb-3">– Dynamic Yield Personalization Benchmark Report</span>
-                </p>
-              </div>
-              <CardTitle className="mt-8">{services[0].title}</CardTitle>
+              <Bot className="h-12 w-12 mb-4 text-primary" />
+              <CardTitle>{services[0].title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground/70">{services[0].description}</p>
@@ -61,12 +55,11 @@ export const Services = () => {
               <div className="flex items-center">
                 <Book className="h-12 w-12 mr-4 text-primary" />
                 <p className="text-sm italic text-foreground/80">
-                  "<span className="font-bold">Course sales conversion rates increased 214%</span> within 90 days<br /> 
-                  <span className="whitespace-nowrap">using AI-</span>enhanced optimization systems."
-                  <span className="block text-xs mt-1 mb-3">– Adobe Digital Experience Research</span>
+                  "<span className="font-bold">Course sales conversion rates increased 214%</span> within 90 days using AI-enhanced optimization systems."
+                  <span className="block text-xs mt-1">– Adobe Digital Experience Research</span>
                 </p>
               </div>
-              <CardTitle className="mt-8">{services[1].title}</CardTitle>
+              <CardTitle className="mt-4">{services[1].title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground/70">{services[1].description}</p>
