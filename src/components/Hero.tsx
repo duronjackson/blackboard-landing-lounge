@@ -15,6 +15,9 @@ export const Hero = () => {
           <h1 className="text-3xl md:text-5xl font-bold mb-2">
             Strategy, Systems, Scale:
           </h1>
+          <p className="text-lg md:text-xl text-foreground/90 italic mb-4">
+            "Executive coaching firms implementing AI-driven lead generation report <span className="font-bold">5.7x higher client acquisition rates</span> than those using traditional networking alone."
+          </p>
           <p className="text-2xl md:text-3xl text-accent font-bold mb-6">
             AI-Powered Growth for Experts & Founders
           </p>
