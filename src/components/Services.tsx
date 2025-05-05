@@ -24,6 +24,9 @@ export const Services = () => {
   return (
     <section className="py-24 relative" id="services">
       <div className="container mx-auto px-4">
+        <p className="text-center italic mb-6 text-foreground/90">
+          "<span className="font-bold">68% of coaching businesses</span> cite client acquisition as their primary business challenge."
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Our Services
         </h2>
