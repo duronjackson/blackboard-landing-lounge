@@ -8,7 +8,7 @@ export const AIDriven = () => {
       <div className="container mx-auto px-4">
         <p className="text-center italic mb-12 pt-8 text-foreground/90 text-xl">
           "Business coaches who implemented automated lead generation systems saw <br /><span className="font-bold italic text-[#F97316]">3.7x higher client acquisition rates</span> compared to traditional networking alone."
-          <br /><span className="text-md mt-4 block">– Business2Community Lead Generation Benchmark Report 2023</span>
+          <br /><span className="text-md md:text-lg mt-1 block">– Business2Community Lead Generation Benchmark Report 2023</span>
         </p>
         
         <div className="text-center mb-12">
