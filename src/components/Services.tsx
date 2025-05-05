@@ -42,8 +42,14 @@ export const Services = () => {
           {/* First row with two cards */}
           <Card className="bg-card shadow-lg border-primary/10">
             <CardHeader>
-              <Bot className="h-12 w-12 mb-4 text-primary" />
-              <CardTitle>{services[0].title}</CardTitle>
+              <div className="flex items-center">
+                <Bot className="h-12 w-12 mr-4 text-primary" />
+                <p className="text-sm italic text-foreground/80">
+                  "<span className="font-bold">Course sales conversion rates increased 214%</span> within 90 days using AI-enhanced optimization systems."
+                  <span className="block text-xs mt-1">– Adobe Digital Experience Research</span>
+                </p>
+              </div>
+              <CardTitle className="mt-4">{services[0].title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground/70">{services[0].description}</p>
