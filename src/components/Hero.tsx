@@ -7,7 +7,7 @@ export const Hero = () => {
     <div 
       className="min-h-[90vh] flex items-center justify-center relative overflow-hidden pb-12 md:pb-16 pt-24 md:pt-36" 
       style={{ 
-        background: "linear-gradient(145deg, #404041 0%, #4d4339 75%, #665544 100%)" 
+        background: "linear-gradient(145deg, #404041 0%, #4d4339 75%, #6d584a 100%)" 
       }}
     >
       <div className="container mx-auto px-4 relative z-10">
