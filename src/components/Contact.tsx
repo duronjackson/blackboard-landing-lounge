@@ -3,16 +3,60 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 
 export const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const company = formData.get('company') as string;
+    const message = formData.get('message') as string;
+
+    try {
+      const { error } = await supabase
+        .from('contacts')
+        .insert([
+          {
+            name,
+            email,
+            company,
+            message,
+          }
+        ]);
+
+      if (error) {
+        console.error('Error saving contact:', error);
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again.",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Message sent!",
+          description: "We'll get back to you as soon as possible.",
+        });
+        // Reset form
+        e.currentTarget.reset();
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -34,18 +78,23 @@ export const Contact = () => {
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
-              <Input placeholder="Name" className="bg-card/50" />
-              <Input type="email" placeholder="Email" className="bg-card/50" />
+              <Input name="name" placeholder="Name" className="bg-card/50" required />
+              <Input name="email" type="email" placeholder="Email" className="bg-card/50" required />
             </div>
             <div className="grid md:grid-cols-1 gap-6">
-              <Input placeholder="Company" className="bg-card/50" />
+              <Input name="company" placeholder="Company" className="bg-card/50" />
             </div>
             <Textarea
+              name="message"
               placeholder="Your message"
               className="min-h-[150px] bg-card/50"
             />
-            <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white">
-              Send Message
+            <Button 
+              type="submit" 
+              className="w-full bg-accent hover:bg-accent/90 text-white"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
           </form>
         </div>

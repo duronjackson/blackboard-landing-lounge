@@ -4,16 +4,67 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Check, ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 
 export const HighConvertingContact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+    const company = formData.get('company') as string;
+    const budget = formData.get('budget') as string;
+    const message = formData.get('message') as string;
+
+    // Combine all form data into a structured message
+    const fullMessage = `Phone: ${phone || 'Not provided'}
+Budget: ${budget || 'Not provided'}
+Message: ${message || 'No additional message'}`;
+
+    try {
+      const { error } = await supabase
+        .from('contacts')
+        .insert([
+          {
+            name,
+            email,
+            company,
+            message: fullMessage,
+          }
+        ]);
+
+      if (error) {
+        console.error('Error saving contact:', error);
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again.",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Message sent!",
+          description: "We'll get back to you within 24 hours.",
+        });
+        // Reset form
+        e.currentTarget.reset();
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -88,28 +139,28 @@ export const HighConvertingContact = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm mb-1">Full Name*</label>
-                    <Input placeholder="John Smith" className="bg-background/50" required />
+                    <Input name="name" placeholder="John Smith" className="bg-background/50" required />
                   </div>
                   <div>
                     <label className="block text-sm mb-1">Email*</label>
-                    <Input type="email" placeholder="john@company.com" className="bg-background/50" required />
+                    <Input name="email" type="email" placeholder="john@company.com" className="bg-background/50" required />
                   </div>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm mb-1">Phone</label>
-                    <Input placeholder="(555) 123-4567" className="bg-background/50" />
+                    <Input name="phone" placeholder="(555) 123-4567" className="bg-background/50" />
                   </div>
                   <div>
                     <label className="block text-sm mb-1">Company*</label>
-                    <Input placeholder="Your Company" className="bg-background/50" required />
+                    <Input name="company" placeholder="Your Company" className="bg-background/50" required />
                   </div>
                 </div>
                 
                 <div>
                   <label className="block text-sm mb-1">Monthly Marketing Budget*</label>
-                  <select className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background/50 text-base">
+                  <select name="budget" className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background/50 text-base" required>
                     <option value="">Select a range</option>
                     <option value="0-5000">$0 - $5,000</option>
                     <option value="5001-10000">$5,001 - $10,000</option>
@@ -121,13 +172,18 @@ export const HighConvertingContact = () => {
                 <div>
                   <label className="block text-sm mb-1">Message</label>
                   <Textarea
+                    name="message"
                     placeholder="Tell us about your goals and challenges"
                     className="min-h-[120px] bg-background/50"
                   />
                 </div>
                 
-                <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white">
-                  Request Free Audit <ArrowRight className="ml-2 h-4 w-4" />
+                <Button 
+                  type="submit" 
+                  className="w-full bg-accent hover:bg-accent/90 text-white"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Request Free Audit"} <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 
                 <p className="text-xs text-foreground/60 text-center">
