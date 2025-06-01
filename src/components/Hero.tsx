@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   const handleBookCall = () => {
-    // Opens Google Calendar booking page
-    window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ2FER6aZWZmkZqZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ', '_blank');
+    // Opens Calendly booking page
+    window.open('https://calendly.com/jackson-blackboardcreative/30min', '_blank');
   };
 
   return (
