@@ -1,3 +1,4 @@
+
 import { Bot, LineChart, Book } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -23,7 +24,7 @@ export const Services = () => {
   return (
     <section className="py-24 relative" id="services">
       <div className="container mx-auto px-4">
-        <p className="text-center italic mb-16 pt-8 text-foreground/90 text-lg">
+        <p className="text-center italic mb-16 pt-8 text-accent text-lg">
           "<span className="font-bold">71% of business coaches</span> <span className="text-white">report client acquisition as their #1 challenge.</span>"
           <br /><span className="text-sm md:text-base mt-1 block">– Center for Executive Coaching</span>
         </p>
