@@ -53,3 +53,28 @@
 .hero-gradient {
   background: linear-gradient(102.3deg, rgba(249,115,22,0.9) 5.9%, rgba(249,115,22,0.7) 64%, rgba(249,115,22,0.4) 89%);
 }
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Ensure text is readable on mobile */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Touch-friendly button sizes */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Form inputs optimized for mobile */
+  input, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
