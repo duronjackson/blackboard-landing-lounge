@@ -1,13 +1,17 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
+  const handleBookCall = () => {
+    // Opens Google Calendar booking page
+    window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ2FER6aZWZmkZqZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ', '_blank');
+  };
+
   return (
     <div 
       className="min-h-[90vh] flex items-center justify-center relative overflow-hidden pb-12 md:pb-16 pt-24 md:pt-36" 
       style={{ 
-        background: "linear-gradient(135deg, #1a1a1b 0%, #2a2a2b 20%, #404041 40%, #5d4e3e 65%, #aa7550 100%)" 
+        background: "linear-gradient(135deg, #2c2c2d 0%, #3a3a3b 15%, #4a4a4b 30%, #5d4e3e 55%, #8b6f47 75%, #aa7550 100%)" 
       }}
     >
       <div className="container mx-auto px-4 relative z-10">
@@ -26,7 +30,7 @@ export const Hero = () => {
           <p className="text-md md:text-lg text-foreground/80 font-bold mb-8 max-w-2xl mx-auto whitespace-nowrap">
             Blackboard Creative's 3 Step System: From Exhausted Expert to Automated Authority
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white mb-16">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white mb-16" onClick={handleBookCall}>
             Book a Call <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
