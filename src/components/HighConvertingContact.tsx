@@ -5,11 +5,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Check, ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export const HighConvertingContact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -52,8 +53,10 @@ Message: ${message || 'No additional message'}`;
           title: "Message sent!",
           description: "We'll get back to you within 24 hours.",
         });
-        // Reset form
-        e.currentTarget.reset();
+        // Reset form using ref
+        if (formRef.current) {
+          formRef.current.reset();
+        }
       }
     } catch (error) {
       console.error('Error:', error);
@@ -135,7 +138,7 @@ Message: ${message || 'No additional message'}`;
             
             <div className="bg-card p-8 rounded-lg shadow-lg border border-primary/10">
               <h3 className="text-xl font-bold mb-6">Get Your Free Marketing Audit</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm mb-1">Full Name*</label>

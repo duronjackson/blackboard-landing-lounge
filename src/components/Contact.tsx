@@ -4,11 +4,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -44,8 +45,10 @@ export const Contact = () => {
           title: "Message sent!",
           description: "We'll get back to you as soon as possible.",
         });
-        // Reset form
-        e.currentTarget.reset();
+        // Reset form using ref
+        if (formRef.current) {
+          formRef.current.reset();
+        }
       }
     } catch (error) {
       console.error('Error:', error);
@@ -76,7 +79,7 @@ export const Contact = () => {
           </p>
         </div>
         <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <Input name="name" placeholder="Name" className="bg-card/50" required />
               <Input name="email" type="email" placeholder="Email" className="bg-card/50" required />
