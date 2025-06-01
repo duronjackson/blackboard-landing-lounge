@@ -37,9 +37,6 @@ export const Contact = () => {
               <Input placeholder="Name" className="bg-card/50" />
               <Input type="email" placeholder="Email" className="bg-card/50" />
             </div>
-            <div className="grid md:grid-cols-1 gap-6">
-              <Input placeholder="Role/Position" className="bg-card/50" />
-            </div>
             <Textarea
               placeholder="Your message"
               className="min-h-[150px] bg-card/50"
