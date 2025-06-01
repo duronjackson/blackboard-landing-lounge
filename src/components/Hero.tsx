@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -9,7 +10,7 @@ export const Hero = () => {
 
   return (
     <div 
-      className="min-h-[90vh] flex items-center justify-center relative overflow-hidden pb-12 md:pb-16 pt-24 md:pt-36" 
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pb-16 md:pb-24 pt-24 md:pt-36" 
       style={{ 
         background: "linear-gradient(135deg, #2c2c2d 0%, #3a3a3b 15%, #4a4a4b 30%, #5d4e3e 55%, #8b6f47 75%, #aa7550 100%)" 
       }}
