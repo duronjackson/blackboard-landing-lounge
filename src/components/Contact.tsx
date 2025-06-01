@@ -18,6 +18,11 @@ export const Contact = () => {
   return (
     <section className="py-8" id="contact">
       <div className="container mx-auto px-4">
+        <p className="text-center italic mb-12 pt-16 text-foreground/90 text-xl">
+          "In 2024, 79% of creators earning six figures said <br /><span className="font-bold italic text-[#F97316]">digital courses were their primary revenue source</span>."
+          <br /><span className="text-md md:text-lg mt-1 block">– Kajabi Creator Economics Report 2024</span>
+        </p>
+        
         <div className="max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent text-center">
             Let's Build Your AI Growth Engine
