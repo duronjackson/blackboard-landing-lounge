@@ -16,6 +16,7 @@ const services = [
   {
     title: "Digital Marketing Strategies",
     description: "Cut through the noise with targeted digital marketing strategies crafted specifically for coaches, course creators, consultants, and SaaS founders. Our end-to-end solutions address your unique challenges—from ineffective SEO and wasted ad spend to inconsistent content creation and poor social engagement. We'll transform your digital presence with data-backed strategies that attract qualified leads, position you as an authority, and convert at every stage of your funnel—delivering measurable ROI where generic approaches fail.",
+    caseStudy: "indicate warmer, sales-ready leads as the top benefit, with 23% seeing a 30% increase in sales opportunities.",
     icon: LineChart,
   }
 ];
@@ -78,7 +79,7 @@ export const Services = () => {
               <div className="flex items-center">
                 <LineChart className="h-12 w-12 mr-4 text-primary" />
                 <p className="text-sm italic text-foreground/80">
-                  "Research shows that <span className="font-bold">71% of leaders executing lead nurturing programs using AI Marketing Systems</span> indicate warmer, sales-ready leads as the top benefit, with 23% seeing a 30% increase in sales opportunities."
+                  "Research shows that <span className="font-bold">71% of leaders executing lead nurturing programs using AI Marketing Systems</span> <span className="bg-primary/20 px-2 py-1 rounded border border-primary/30">{services[2].caseStudy}</span>"
                   <span className="block text-xs mt-1">– Madison Logic</span>
                 </p>
               </div>
