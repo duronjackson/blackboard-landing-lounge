@@ -81,7 +81,7 @@ export const Services = () => {
                 <p className="text-sm italic text-foreground/80">
                   "Research shows that <span className="font-bold">71% of leaders executing lead nurturing programs using AI Marketing Systems</span> 
                   <br />{services[2].caseStudy}"
-                  <span className="block text-xs mt-1">– Madison Logic</span>
+                  <span className="block text-xs mt-1">– Demand Gen Report</span>
                 </p>
               </div>
               <CardTitle className="mt-4">{services[2].title}</CardTitle>
