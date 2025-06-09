@@ -75,8 +75,14 @@ export const Services = () => {
           {/* Second row with card spanning both columns, but left-aligned content */}
           <Card className="bg-card shadow-lg border-primary/10 md:col-span-2">
             <CardHeader>
-              <LineChart className="h-12 w-12 mb-4 text-primary" />
-              <CardTitle>{services[2].title}</CardTitle>
+              <div className="flex items-center">
+                <LineChart className="h-12 w-12 mr-4 text-primary" />
+                <p className="text-sm italic text-foreground/80">
+                  "Research shows that <span className="font-bold">71% of leaders executing lead nurturing programs using AI Marketing Systems</span> indicate warmer, sales-ready leads as the top benefit, with 23% seeing a 30% increase in sales opportunities."
+                  <span className="block text-xs mt-1">– Madison Logic</span>
+                </p>
+              </div>
+              <CardTitle className="mt-4">{services[2].title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-foreground/70">{services[2].description}</p>
