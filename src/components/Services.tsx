@@ -79,7 +79,8 @@ export const Services = () => {
               <div className="flex items-center">
                 <LineChart className="h-12 w-12 mr-4 text-primary" />
                 <p className="text-sm italic text-foreground/80">
-                  "Research shows that <span className="font-bold">71% of leaders executing lead nurturing programs using AI Marketing Systems</span> <span className="bg-primary/20 px-2 py-1 rounded border border-primary/30">{services[2].caseStudy}</span>"
+                  "Research shows that <span className="font-bold">71% of leaders executing lead nurturing programs using AI Marketing Systems</span> 
+                  <br /><span className="bg-primary/20 px-2 py-1 rounded border border-primary/30">{services[2].caseStudy}</span>"
                   <span className="block text-xs mt-1">– Madison Logic</span>
                 </p>
               </div>
