@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -18,7 +17,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Strategy, Systems, Scale:
+            Strategy. Systems. Scale.
           </h1>
           <p className="text-base md:text-lg text-foreground/90 italic mb-4">
             "Executive coaching firms implementing AI-driven lead generation report 
