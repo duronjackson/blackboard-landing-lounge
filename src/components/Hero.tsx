@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -21,7 +22,8 @@ export const Hero = () => {
           </h1>
           <p className="text-base md:text-lg text-foreground/90 italic mb-4">
             "High-ticket coaching programs that implement completion-optimization strategies see 
-            <br /><span className="font-bold">3.4x higher client lifetime value and 40% more referrals</span> compared to programs with standard delivery methods."
+            <br /><span className="font-bold">3.4x higher client lifetime value and 40% more referrals</span> compared to
+            <br />programs with standard delivery methods."
             <br /><span className="text-sm mt-1 block">– Global Coaching Institute 2024 Premium Program Performance Study</span>
           </p>
           <p className="text-2xl md:text-3xl text-accent font-bold mb-6">
